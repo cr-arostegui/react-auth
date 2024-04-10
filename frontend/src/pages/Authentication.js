@@ -18,7 +18,7 @@ export async function action({ request }) {
   const data = await request.formData();
   const authData = {
     email: data.get('email'),
-    passowrd: data.get('password'),
+    password: data.get('password'),
   };
 
   const response = await fetch('http://localhost:8080/' + mode, {
